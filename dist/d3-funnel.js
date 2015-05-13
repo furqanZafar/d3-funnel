@@ -302,7 +302,7 @@
 	{
 		var i = index;
 		var paths = this.sectionPaths[index];
-		var textStr = this.data[i][0] + ": " + this.data[i][1].toLocaleString();
+		var textStr = this.label.text(i);
 		var textFill = this.data[i][3] || this.label.fill;
 
 		var textX = this.width / 2;   // Center the text
