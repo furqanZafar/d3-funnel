@@ -363,7 +363,7 @@
 
 		// Label settings
 		if ("label" in options) {
-			var validLabelOptions = /fontSize|fill/;
+			var validLabelOptions = /fontSize|fill|text/;
 			var labelOption;
 			for (labelOption in options.label) {
 				if (labelOption.match(validLabelOptions)) {
