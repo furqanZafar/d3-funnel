@@ -31,7 +31,10 @@
 			animation: false,
 			label: {
 				fontSize: "14px",
-				fill: "#fff"
+				fill: "#fff",
+				text: (function(i){
+					return this.data[i][0] + ": " + this.data[i][1].toLocaleString();
+				}).bind(this)
 			}
 		};
 	};
